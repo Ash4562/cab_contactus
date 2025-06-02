@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+  
+
+  html, body {
+    height: 100%;
+    /* REMOVE: overflow: hidden; */
+    overflow: auto; /* or leave it unset */
+  }
+
+  /* Ensure that this is defined globally in your Tailwind config */
+/* In your global CSS */
+html {
+  scroll-snap-type: y mandatory;
+}
+.distortion-container {
+  scroll-snap-align: start;
+}

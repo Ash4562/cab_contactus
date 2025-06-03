@@ -109,9 +109,10 @@ const Pricing = () => {
           </div>
 
           {/* Book Now Button */}
-          <button className="mt-auto w-72 bg-[#CDFF00] text-black px-6 py-2 rounded-lg hover:bg-[#b6e000] transition">
-            Book Now
-          </button>
+          <button className="mt-auto w-full sm:w-72 bg-[#CDFF00] text-black px-6 py-2 rounded-lg hover:bg-[#b6e000] transition">
+  Book Now
+</button>
+
         </div>
       ))}
     </div>

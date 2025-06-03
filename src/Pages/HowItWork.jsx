@@ -13,7 +13,7 @@ const HowItWork = () => {
         <img
           src="/how.png"
           alt="How it works"
-          className="w-full max-w-4xl h-auto object-contain"
+          className="w-full max-w-6xl h-auto object-contain"
         />
       </div>
     </div>

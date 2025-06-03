@@ -3,11 +3,15 @@ import { LiaCheckSolid } from "react-icons/lia";
 import { FaApple, FaGooglePlay } from "react-icons/fa";
 
 const Pricing = () => {
+  const [selectedRateType, setSelectedRateType] = React.useState('Hourly');
+
   const cars = [
     {
       image: '/car1.png',
       title: 'Sedan',
-      rate: '25/km',
+      hourlyRate: '₹200/hr',
+      dailyRate: '₹1600/day',
+      weeklyRate: '₹9800/week',
       subtitle: 'Including driver and fuel',
       features: [
         'Up to 4 passengers',
@@ -19,7 +23,9 @@ const Pricing = () => {
     {
       image: '/car2.png',
       title: 'SUV',
-      rate: '35/km',
+      hourlyRate: '₹300/hr',
+      dailyRate: '₹2400/day',
+      weeklyRate: '₹14,500/week',
       subtitle: 'Spacious & comfortable',
       features: [
         'Up to 4 passengers',
@@ -31,7 +37,9 @@ const Pricing = () => {
     {
       image: '/car3.png',
       title: 'Hatchback',
-      rate: '18/km',
+      hourlyRate: '₹150/hr',
+      dailyRate: '₹1200/day',
+      weeklyRate: '₹7300/week',
       subtitle: 'Compact & efficient',
       features: [
         'Up to 4 passengers',
@@ -52,6 +60,20 @@ const Pricing = () => {
       Choose from our range of vehicles and pricing options to suit your needs and budget.
       </h3> 
     </div>
+    <div className="flex space-x-4 mb-32 p-4 justify-center items-center bg-white rounded-xl">
+  {['Hourly', 'Daily', 'Weekly'].map((label) => (
+    <button
+      key={label}
+      onClick={() => setSelectedRateType(label)}
+      className={`px-6 py-2 font-semibold border border-gray-300 rounded-full transition duration-300 ${
+        selectedRateType === label ? 'bg-[#CDFF00]' : 'hover:bg-[#CDFF00]'
+      }`}
+    >
+      {label}
+    </button>
+  ))}
+</div>
+
     <div className="max-w-6xl mx-auto pxs-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10 px-8">
       {cars.map((car, index) => (
         <div
@@ -62,13 +84,19 @@ const Pricing = () => {
           <img
             src={car.image}
             alt={car.title}
-            className="w-full h-48 object-cover rounded-xl"
+            className="w-full h-48 object-cover rounded-xl  lg:-mt-28"
           />
 
           {/* Text section */}
           <div className="w-full text-center space-y-2">
             <h1 className="text-2xl font-bold text-gray-800">{car.title}</h1>
-            <h2 className="text-lg font-semibold text-gray-700">{car.rate}</h2>
+            <h2 className="text-lg font-semibold text-gray-700">
+  {selectedRateType === 'Hourly'
+    ? car.hourlyRate
+    : selectedRateType === 'Daily'
+    ? car.dailyRate
+    : car.weeklyRate}
+</h2>
             <p className="text-gray-600">{car.subtitle}</p>
             <div className="space-y-1">
   {car.features.map((feature, i) => (

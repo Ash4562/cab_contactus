@@ -41,22 +41,22 @@ const Navbar = () => {
   <div className="hidden md:flex items-center gap-6 ml-auto">
     <ul className="flex gap-8 text-black">
       <li className="hover:underline font-semibold cursor-pointer">
-        <a href="#home">HOME</a>
+        <a href="#home">Home</a>
       </li>
       <li className="hover:underline font-semibold cursor-pointer">
         <a href="#howitworks">How It Works</a>
       </li>
       <li className="hover:underline font-semibold cursor-pointer">
-        <a href="#features">FEATURES</a>
+        <a href="#features">Features</a>
       </li>
       <li className="hover:underline font-semibold cursor-pointer">
-        <a href="#about">ABOUT US</a>
+        <a href="#about">About Us</a>
       </li>
       <li className="hover:underline font-semibold cursor-pointer">
         <a href="#pricing">Pricing</a>
       </li>
       <li className="hover:underline font-semibold cursor-pointer">
-        <a href="#contactus">CONTACT</a>
+        <a href="#contactus">Contact</a>
       </li>
     </ul>
 
@@ -78,12 +78,12 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden mt-4 flex flex-col gap-4 text-black bg-white p-4 rounded-lg shadow">
-          <a href="#home" className="hover:underline font-semibold">HOME</a>
+          <a href="#home" className="hover:underline font-semibold">Home</a>
           <a href="#howitworks" className="hover:underline font-semibold">How It Works</a>
-          <a href="#features" className="hover:underline font-semibold">FEATURES</a>
-          <a href="#about" className="hover:underline font-semibold">ABOUT US</a>
+          <a href="#features" className="hover:underline font-semibold">Features</a>
+          <a href="#about" className="hover:underline font-semibold">About Us</a>
           <a href="#pricing" className="hover:underline font-semibold">Pricing</a>
-          <a href="#contactus" className="hover:underline font-semibold">CONTACT</a>
+          <a href="#contactus" className="hover:underline font-semibold">Cantact</a>
           <button className="bg-[#CDFF00] text-black px-4 py-2 rounded-3xl mt-2">
             Book a Driver
           </button>

@@ -73,6 +73,10 @@ const About = () => {
       id="about"
       className="flex flex-col lg:flex-row items-center gap-10 px-4 sm:px-10 lg:px-24 py-12 bg-white font-outfit"
     >
+     <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 sm:mb-0 flex justify-center lg:hidden">
+  About Us
+</h1>
+
       {/* Left: Image */}
       <div className="w-full lg:w-1/2 flex justify-center">
         <img
@@ -84,7 +88,10 @@ const About = () => {
 
       {/* Right: Text + Stats */}
       <div className="w-full lg:w-1/2 flex flex-col gap-6 text-center lg:text-left">
-        <h1 className="text-3xl sm:text-4xl font-bold">About Us</h1>
+      <h1 className="hidden sm:flex text-3xl sm:text-4xl font-bold justify-center">
+  About Us
+</h1>
+
         <p className="text-gray-700">
           At Drvvy, our mission is to make urban mobility easier by offering hassle-free
           driver + car rentals with complete transparency and reliability.

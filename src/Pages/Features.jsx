@@ -40,7 +40,7 @@ const Features = () => {
   </div>
 
   {/* Subheading */}
-  <h3 className="text-base sm:text-lg md:text-xl font-medium text-gray-700 mt-4 max-w-2xl mx-auto">
+  <h3 className="text-base sm:text-lg md:text-xl font-medium text-gray-700 mt-4 max-w-2xl mx-auto sm:mt-8">
     Our service offers unique advantages designed to make your travel experience exceptional.
   </h3>
 </div>

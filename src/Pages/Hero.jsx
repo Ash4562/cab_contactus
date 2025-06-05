@@ -3,7 +3,7 @@ import { FaAngleRight } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <div className="font-outfit grid grid-cols-1 lg:grid-cols-2 gap-6 items-center px-6 py-8">
+    <div id='home' className="font-outfit grid grid-cols-1 lg:grid-cols-2 gap-6 items-center px-6 py-8">
       <div className='p-4 lg:ml-16'>
         <span className=' text-4xl font-bold' > Your</span>
         <span className='text-[#CDFF00] text-4xl font-bold' > Ride, </span>

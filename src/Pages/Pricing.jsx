@@ -36,7 +36,7 @@ const Pricing = () => {
     },
     {
       image: '/car3.png',
-      title: 'Hatchback',
+      title: 'Premium',
       hourlyRate: '₹150/hr',
       dailyRate: '₹1200/day',
       weeklyRate: '₹7300/week',
@@ -51,7 +51,7 @@ const Pricing = () => {
     },
   ];
   return (
- <div id='pricing'>
+ <div id='pricing' className='sm:mt-32'>
      <div>
       <div className="text-center px-4 sm:px-10 md:px-20  font-outfit ">
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
@@ -60,7 +60,7 @@ const Pricing = () => {
       Choose from our range of vehicles and pricing options to suit your needs and budget.
       </h3> 
     </div>
-    <div className="flex space-x-4 mb-32 p-4 justify-center items-center bg-white rounded-xl">
+    <div className="flex space-x-4 lg:mb-32 p-4 justify-center items-center bg-white rounded-xl">
   {['Hourly', 'Daily', 'Weekly'].map((label) => (
     <button
       key={label}
